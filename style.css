@@ -38,3 +38,20 @@ ul {
   padding: 0;
   margin-top: 20px;
 }
+
+li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
