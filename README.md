@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7F00FF,50:00D8FF,100:00FFA3&height=190&section=header&text=Lista%20de%20Tareas%20JS&fontSize=42&fontAlignY=36&fontColor=ffffff&animation=fadeIn&desc=Organiza%20tus%20pendientes%20desde%20el%20navegador&descAlignY=56&descAlign=50" width="100%" alt="Banner animado de Lista de Tareas JS" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7F00FF,50:00D8FF,100:00FFA3&height=190&section=header&text=Lista%20de%20Tareas%20JS&fontSize=42&fontAlignY=36&fontColor=ffffff&animation=fadeIn&desc=Task%20Manager%20moderno%20con%20JavaScript&descAlignY=56&descAlign=50" width="100%" alt="Banner animado de Lista de Tareas JS" />
 </p>
 
 <p align="center">
   <a href="https://lista-tareas-angel.netlify.app/" target="_blank">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2500&pause=900&color=00D8FF&center=true&vCenter=true&width=850&lines=App+de+tareas+con+JavaScript;Guarda+tus+tareas+con+LocalStorage;Simple%2C+rapida+y+funcional" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2500&pause=900&color=00D8FF&center=true&vCenter=true&width=900&lines=Task+Manager+con+Vanilla+JavaScript;LocalStorage+%2B+Filtros+%2B+Modo+Oscuro;UI+moderna%2C+animada+y+responsive" alt="Typing SVG" />
   </a>
 </p>
 
@@ -14,15 +14,15 @@
   </a>
   <img src="https://img.shields.io/github/last-commit/angelcamayojm-wq/lista-tareas-js?style=for-the-badge&color=7F00FF" alt="Último commit" />
   <img src="https://img.shields.io/github/repo-size/angelcamayojm-wq/lista-tareas-js?style=for-the-badge&color=00D8FF" alt="Tamaño del repositorio" />
-  <img src="https://img.shields.io/badge/Estado-En%20desarrollo-00FFA3?style=for-the-badge" alt="Estado del proyecto" />
+  <img src="https://img.shields.io/badge/Estado-Mejorado-00FFA3?style=for-the-badge" alt="Estado del proyecto" />
 </p>
 
 ---
 
 ## 📝 Descripción
 
-**Lista de Tareas JS** es una aplicación web sencilla, rápida y práctica para gestionar tareas desde el navegador.  
-Permite **agregar**, **eliminar** y **guardar tareas automáticamente** usando `LocalStorage`, por lo que tus pendientes se mantienen incluso después de recargar la página.
+**Lista de Tareas JS** es una aplicación web moderna para gestionar pendientes desde el navegador.  
+Está construida con **HTML**, **CSS** y **JavaScript puro**, sin frameworks, e incluye persistencia con `LocalStorage`, filtros, edición de tareas, modo claro/oscuro y animaciones suaves.
 
 <p align="center">
   <a href="https://lista-tareas-angel.netlify.app/">
@@ -38,8 +38,6 @@ Permite **agregar**, **eliminar** y **guardar tareas automáticamente** usando `
   <img src="./assets/demo.gif" alt="Demo animada de Lista de Tareas JS" width="780" />
 </p>
 
-> 💡 **Nota:** si la animación no aparece, asegúrate de subir el archivo `assets/demo.gif` al repositorio.
-
 ---
 
 ## ✨ Funcionalidades
@@ -47,23 +45,39 @@ Permite **agregar**, **eliminar** y **guardar tareas automáticamente** usando `
 <table>
   <tr>
     <td>✅ Agregar tareas</td>
-    <td>Escribe una tarea y añádela a la lista.</td>
+    <td>Crea tareas rápidamente desde el input principal.</td>
+  </tr>
+  <tr>
+    <td>🎯 Marcar como completadas</td>
+    <td>Cambia el estado de cada tarea con un solo clic.</td>
+  </tr>
+  <tr>
+    <td>✏️ Editar tareas</td>
+    <td>Edita una tarea sin borrar ni volver a crearla.</td>
   </tr>
   <tr>
     <td>🗑️ Eliminar tareas</td>
-    <td>Borra tareas cuando ya no las necesites.</td>
+    <td>Borra tareas individuales con animación de salida.</td>
   </tr>
   <tr>
-    <td>💾 Guardado local</td>
-    <td>Las tareas se almacenan en el navegador con <code>LocalStorage</code>.</td>
+    <td>🔎 Filtrar tareas</td>
+    <td>Visualiza todas, pendientes o completadas.</td>
   </tr>
   <tr>
-    <td>🔄 Persistencia</td>
-    <td>Las tareas se mantienen al recargar la página.</td>
+    <td>📊 Progreso visual</td>
+    <td>Muestra el porcentaje de tareas completadas.</td>
   </tr>
   <tr>
-    <td>⚡ Vanilla JS</td>
-    <td>Proyecto construido sin frameworks externos.</td>
+    <td>🌙 Modo oscuro/claro</td>
+    <td>Permite cambiar el tema y guarda la preferencia.</td>
+  </tr>
+  <tr>
+    <td>💾 LocalStorage</td>
+    <td>Guarda tareas y configuración en el navegador.</td>
+  </tr>
+  <tr>
+    <td>📱 Diseño responsive</td>
+    <td>Se adapta a pantallas móviles y escritorio.</td>
   </tr>
 </table>
 
@@ -84,12 +98,12 @@ Permite **agregar**, **eliminar** y **guardar tareas automáticamente** usando `
 
 ```mermaid
 flowchart LR
-    A[Usuario] --> B[Escribe una tarea]
-    B --> C[JavaScript valida el texto]
-    C --> D[Se crea un elemento en el DOM]
+    A[Usuario escribe una tarea] --> B[JavaScript valida el texto]
+    B --> C[Se crea un objeto con ID único]
+    C --> D[Se renderiza en el DOM]
     D --> E[Se guarda en LocalStorage]
-    E --> F[La tarea sigue disponible al recargar]
-    F --> G[El usuario puede eliminarla]
+    E --> F[Puede editarse, completarse o eliminarse]
+    F --> G[La interfaz actualiza estadísticas y progreso]
 ```
 
 ---
@@ -100,18 +114,17 @@ flowchart LR
 lista-tareas-js/
 │
 ├── index.html        # Estructura principal de la aplicación
-├── style.css         # Estilos visuales de la interfaz
-├── script.js         # Lógica para agregar, eliminar y guardar tareas
+├── style.css         # Estilos, animaciones y diseño responsive
+├── script.js         # Lógica de tareas, filtros, tema y LocalStorage
 ├── assets/
-│   └── demo.gif      # Vista previa animada para el README
+│   ├── demo.gif      # Vista previa animada para el README
+│   └── preview.png   # Captura del proyecto
 └── README.md         # Documentación del proyecto
 ```
 
 ---
 
 ## 🚀 Instalación y uso
-
-Sigue estos pasos para ejecutar el proyecto en tu computador:
 
 ```bash
 # 1. Clonar el repositorio
@@ -120,7 +133,7 @@ git clone https://github.com/angelcamayojm-wq/lista-tareas-js.git
 # 2. Entrar a la carpeta del proyecto
 cd lista-tareas-js
 
-# 3. Abrir index.html en el navegador
+# 3. Abrir index.html en tu navegador
 ```
 
 También puedes abrir directamente el archivo `index.html` con doble clic.
@@ -130,24 +143,27 @@ También puedes abrir directamente el archivo `index.html` con doble clic.
 ## 📌 Conceptos practicados
 
 - Manipulación del **DOM**
-- Eventos con **JavaScript**
-- Uso de `addEventListener`
-- Validación básica de formularios
-- Persistencia de datos con `localStorage`
-- Conversión de datos con `JSON.stringify()` y `JSON.parse()`
+- Eventos con **addEventListener**
+- Validación de formularios
+- Persistencia con **LocalStorage**
+- Uso de objetos y arrays en JavaScript
+- Renderizado dinámico de elementos
+- Filtros por estado
+- Modo claro/oscuro con variables CSS
+- Diseño responsive
+- Animaciones con `@keyframes`
+- Accesibilidad básica con etiquetas `aria-label`
 
 ---
 
-## 🧪 Ideas para futuras mejoras
+## 🧪 Mejoras futuras
 
-- [ ] Marcar tareas como completadas
-- [ ] Editar tareas existentes
-- [ ] Agregar filtros: todas, pendientes y completadas
-- [ ] Crear modo oscuro
-- [ ] Usar IDs únicos para manejar tareas repetidas
-- [ ] Agregar animaciones al insertar o eliminar tareas
-- [ ] Mejorar accesibilidad con etiquetas ARIA
-- [ ] Publicar capturas reales del proyecto
+- [ ] Agregar fechas límite para cada tarea
+- [ ] Crear categorías o etiquetas
+- [ ] Permitir arrastrar y ordenar tareas
+- [ ] Agregar búsqueda por texto
+- [ ] Exportar tareas en JSON
+- [ ] Añadir pruebas básicas de JavaScript
 
 ---
 
