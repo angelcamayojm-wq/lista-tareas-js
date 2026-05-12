@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://lista-tareas-angel.netlify.app/" target="_blank">
+  <a href="https://angelcamayojm-wq.github.io/lista-tareas-js/" target="_blank">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2500&pause=900&color=00D8FF&center=true&vCenter=true&width=900&lines=Task+Manager+con+Vanilla+JavaScript;LocalStorage+%2B+Filtros+%2B+Modo+Oscuro;UI+moderna%2C+animada+y+responsive" alt="Typing SVG" />
   </a>
 </p>
