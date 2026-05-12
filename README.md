@@ -38,7 +38,9 @@ Está construida con **HTML**, **CSS** y **JavaScript puro**, sin frameworks, e 
   <img src="./assets/demo.gif" alt="Demo animada de Lista de Tareas JS" width="780" />
 </p>
 
----
+
+=======
+--
 
 ## ✨ Funcionalidades
 
