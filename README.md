@@ -38,7 +38,7 @@ Permite **agregar**, **eliminar** y **guardar tareas automáticamente** usando `
   <img src="./assets/demo.gif" alt="Demo animada de Lista de Tareas JS" width="780" />
 </p>
 
-> 💡 **Nota:** si la animación no aparece, asegúrate de subir el archivo `assets/demo.gif` al repositorio.
+
 
 ---
 
